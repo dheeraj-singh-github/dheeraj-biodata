@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Glowing Inputs Login Form UI</title>
+    <link rel="stylesheet" href="login.css" />
+   
+    <script>
+        function myFunction() { 
+
+             const useridd = document.getElementById("userid").value;
+             const userpasss = document.getElementById("userpass").value;
+
+             console.log(useridd);
+             console.log(userpasss);
+
+             if(useridd==="b520019"&& userpasss==="CE@iiit" ){
+
+                window.location = "Biodata.html";
+                }
+                else if(useridd==="B520019"&& userpasss==="CE@iiit" ){
+
+window.location = "Biodata.html";
+}
+else{
+  document.getElementById("notifypara").innerHTML="please enter valid credentials"
+}
+
+            
+
+          
+        }
+        </script>
+    
+  </head>
+  <body>
+    <div class="login-form">
+      <div class="text">LOGIN</div>
+      <form>
+        <div class="field">
+          <div class="fas fa-envelope"></div>
+          <input id="userid" type="text" placeholder="College ID" />
+        </div>
+        <div class="field">
+          <div class="fas fa-lock"></div>
+          <input id="userpass" type="password" placeholder="Password" />
+        </div>
+        <p id="notifypara" class="p--bolte"> </p>
+        <!-- <a href="biodata.html"> -->
+            <button type="button" onclick="myFunction()">LOGIN</button>
+
+            
+        <!-- </a> -->
+        <div class="link">
+          Not a member?
+          <a href="#">Signup now</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
